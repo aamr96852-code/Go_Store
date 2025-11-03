@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="Go store logo.png">
+   <link rel="stylesheet" href="style .css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>Go Store</title>
+</head>
+<body>
+
+   <header>
+    <h1 class="h">go store</h1>
+    <i id="menu-icon" class="fa-solid fa-bars"></i>
+      <nav id="links">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="#About">About Us</a></li>
+         <li><a href="#Products">Products</a></li>
+         <li><a href="#Contact">Contact Us</a></li>
+      </ul>
+      </nav>
+   </header>
+
+   <div class="images">
+    <div class="imagees">
+
+      <a href="iphons.html" target="_blank">
+          <img src="iphons.png" title="Click on The Photo to Read More">
+      </a>
+      <a href="apple watch.html" target="_blank">
+          <img src="apple watch.png" title="Click on The Photo to Read More">
+      </a>
+      <a href="air pods.html" target="_blank">
+          <img src="air pods.png" title="Click on The Photo to Read More"> 
+      </a>
+      <a href="accessories.html" target="_blank">
+          <img src="accessories.png" title="Click on The Photo to Read More"> 
+      </a>
+
+    </div>
+   </div>
+
+   <section class="Offers">
+
+      <h2>Special Offers</h2>
+      <div class="CardOffers">
+         <div class="card">
+         <img src="سماعات.webp" >
+         <h6>AirPods (3rd generation) with MagSafe Charging Case</h6>
+         <p> EGP <span class="newPrice">43,000</span> <del class="oldPrice"><span>52,000</span></del><br>
+            <span style="color: green; font-weight: bolder;">OFF 17% </span></p>
+         <a class="buy" href="#">Buy Now</a>
+         </div>
+
+         <div class="card">
+            <img src="iPhone 14.webp">
+            <h6>iPhone 14 128GB Roxo LACRAD0 - 1 ano de garantia Apple</h6>
+            <p> EGP <span class="newPrice">39,990</span> <del class="oldPrice"><span>48,180</span></del><br> 
+            <span style="color: green; font-weight: bolder;">OFF 17% </span></p>
+         <a class="buy" href="#">Buy Now</a>
+          </div>
+
+          <div class="card">
+            <img src="ساعه ابل .png">
+            <h6>Apple Watch Series 10 GPS - Aluminum Case with Sport Band</h6>
+            <p> EGP <span class="newPrice">25,000</span> <del class="oldPrice"><span>30,000</span></del><br>
+            <span style="color: green; font-weight: bolder;">OFF 17% </span></p>
+         <a class="buy" href="#">Buy Now</a>
+         </div>
+
+      </div>
+   </section>
+
+   <div class="aboutUs" id="About">
+      <div class="store">
+         <p> <span style="color: #B87C4C; font-weight: bolder; font-size: 20px;">About Us</span><br>
+      At Go Store, we’re passionate about bringing you the latest technology at the best prices.  
+      We specialize in smartphones, tablets, and accessories — all with trusted warranties and exceptional service.  
+      Our goal is to make your tech shopping experience simple, fun, and affordable.</p>
+      <img src="store.jpeg" width="250px">
+      </div>
+   </div>
+
+   <div class="product" id="Products">
+        <h2>Products</h2>
+     <div class="products-container">
+          <div class="cardd">
+         <img src="iphone 17.jpg">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+        <div class="cardd">
+         <img src="iphone 17promax.jpg">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+        <div class="cardd">
+         <img src="Power Pro PD.png">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+        <div class="cardd">
+         <img src="ipad.png">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+        <div class="cardd">
+         <img src="apple watch.png">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+        <div class="cardd">
+         <img src="AirPods Max.jpeg">
+          <a href="#">Show Detalis</a>
+          <a href="#">Show Price</a>
+        </div>
+
+     </div>  
+   </div>
+
+   <div class="contact" id="Contact">
+      <h2>Contact Us</h2>
+      <a href="https://www.facebook.com/share/1By2YTvmKh/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+      <a><i class="fa-solid fa-square-phone"></i>+20 01019609637</a>
+      <a href="https://maps.google.com/?q=29.995316,31.151007" target="_blank"><i class="fa-solid fa-location-dot"></i>King Faisal Street, Mariouteya, Giza, Egypt</a>
+   </div>
+
+   <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const links = document.getElementById('links');
+  menuIcon.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+  </script>
+
+</body>
+</html>

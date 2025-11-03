@@ -1,0 +1,249 @@
+body{
+  background: linear-gradient(135deg, #fff8ec 0%,  #f7f1de 30%, #efe0c9 60%,  #b87c4c 100%);   
+  background-attachment: fixed; 
+  color: #222;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+header{
+    display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #B87C4C;
+}
+.h{
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 40px;
+  margin: 0;
+  text-transform: uppercase;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    margin-left: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.images{
+    display: flex; justify-content: center; 
+}
+.imagees a{
+  text-decoration: none;
+}
+.imagees img{
+    width: 100px; margin-right: 80px; padding: 10px ; 
+}
+.Offers{
+    padding: 5px; color: black; text-align: center; background-color:#F7F1DE ;
+}
+.Offers h2, .product h2 {
+    font-size: 25px; margin-bottom: 30px; color: #B87C4C; 
+    text-align: center; 
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.CardOffers {
+    display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; align-items: center; margin: 0 auto;
+    text-align: center;
+}
+.card{
+    background-color: white; border: solid 1px #ddd; padding: 15px; border-radius: 10px; width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0, 1) ; margin-right: 20px; height: 300px;
+}
+.card img {
+    width: 150px; border-radius: 10px;  height: 150px;
+}
+.oldPrice{
+    color: gray; margin-right: 10px; font-size: 12px;
+}
+.newPrice{
+    color: red; font-weight: bold;
+}
+.buy{
+    text-decoration: none; display: inline-block; background: orange; color: white;
+    border-radius: 7px; border-style: solid; margin-top: auto; padding: 1px 7px;
+}
+.aboutUs{
+    padding: 5px; color: black; 
+}
+.store{
+    display: flex; margin: 60px 50px;
+}
+.store p{
+   font-size: small;
+   font-family: "Momo Signature", cursive;
+   font-weight: 400;
+   font-style: normal;
+}
+.store img{
+   border-radius: 0px 20px;
+   margin-left: 30px;
+}
+.product{
+ padding: 20px;
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.cardd{
+    width: 230px; text-align: center; background: white; border-radius: 10px; 
+    box-shadow: 0 2px 8px rgb(202, 132, 41);
+}
+.cardd img{
+    width: 100%;
+    border-radius: 2px;
+}
+.cardd a{
+    display: inline-block; text-decoration: none; font-size: 13px; margin: 5px;
+    background-color: rgb(184, 124, 76, 0.9); color: white; padding: 5px 10px; border-radius: 5px; 
+}
+.contact{
+    text-align: center; 
+    padding: 1px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #B87C4C;
+    color: white;
+}
+.contact a{
+    display: block;
+    text-decoration: none;
+    margin: 3px;
+    font-family: "Momo Signature", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #222;
+    
+}
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #9c6943;
+    padding: 2px;
+}
+.imagees img:hover{
+    transform: scale(1.3);
+    transition: 2s ease-in-out 1s;
+    cursor: pointer;
+}
+.cardd:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out 1s;
+    cursor: pointer;
+}
+#menu-icon {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none; 
+}
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block; 
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    display: none; 
+  }
+  nav.active {
+    display: block; 
+    background-color: #B87C4C;
+    width: 100%;
+    text-align: center;
+  }
+  nav.active ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  nav.active ul li {
+    margin: 10px 0;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .imagees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .imagees img {
+    width: 60%;
+    margin: 15px auto;
+    padding: 0;
+    display: block;
+  }
+
+  .CardOffers {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .card {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .store {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .store img {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 70%;
+  }
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardd {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .contact {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .contact a {
+    font-size: 14px;
+  }
+}
